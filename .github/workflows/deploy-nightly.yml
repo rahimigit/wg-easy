@@ -1,9 +1,8 @@
 name: Build & Publish Nightly Docker Image to GitHub Container Registry
 
 on:
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
   workflow_dispatch:
-  schedule:
-    - cron: "0 12 * * *"
 
 jobs:
   deploy:
